@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C67575;
+    background: -moz-linear-gradient(161deg, #C67575 27%, #F3C7B8 100%);   
+}
+
+h1{
+    width: 50%;
+    text-transform: uppercase;
+    color: #0B232D;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-bottom: 35px;
+}
+
+form{
+    width: 50%;
+    padding: 100px;
+    /*inicio do Glassmorphism*/
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(38, 37, 36, 0.60);
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /*fim do glassmorphism*/
+}
+
+.area-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.area-input input{
+    width: 45%;
+}
+
+.endereco{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.area-email {
+    width: 100%;
+    display: flex;
+}
+
+.area-email input{
+    width: 100%;
+}
+
+.area-botao{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#botao-enviar{
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    height: 45px;
+    background-color: #C67575;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.60);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botao-enviar:hover{
+    transition: .2s ease;
+    background-color: #f3c7b8;
+}
+
+input{
+    color: #C67575;
+    font-weight: bold;
+    height: 45px;
+    padding-left: 10px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+input::placeholder{
+    color: #C67575;
+}
+
+input[type=number]{
+    color: #C67575;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #C67575;
+    font-weight: bold;
+}
+
+footer{
+    position: absolute;
+    top: 85vh;
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
